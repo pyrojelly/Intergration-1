@@ -88,7 +88,7 @@ public class Main {
     double rad = radius;
     return Math.PI * rad * rad;
   }
-  /*The beggi
+  /*The start of the game list of choices very basic currently 
   */
   public static double getPrize(double money) {
    double tier= 0;

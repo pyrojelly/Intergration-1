@@ -197,7 +197,8 @@ return tier;
  * benites are that it allows u to use the 4 legs and bark from the dog class and not need to rewrite code. 
 */
   
-
+//break lets the user break out of the case that the code was in thus not going to another case.
+// i have more code in the in class computer i thought i commit and pushed it to gethub but i was wrong.
     
 }
 

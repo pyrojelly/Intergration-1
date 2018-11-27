@@ -120,7 +120,7 @@ System.out.println(board2[1][1]); //should show 5
   public static double globalVar(double Tax) {
     
     /*
-     * When a variable is declared with final keyword, its value can’t be modified, 
+     * When a variable is declared with final keyword, its value canâ€™t be modified, 
      * essentially, a constant.
      */
     final double SALESTAX = .15;
@@ -181,7 +181,42 @@ System.out.println(board2[1][1]); //should show 5
 System.out.println("tier = " + tier);
 return tier;
 }
-  
+  public static class SwitchDemo {
+    public static void main(String[] args) {
+
+        int month = 8;
+        String monthString;
+        switch (month) {
+            case 1:  monthString = "January";
+                     break;
+            case 2:  monthString = "February";
+                     break;
+            case 3:  monthString = "March";
+                     break;
+            case 4:  monthString = "April";
+                     break;
+            case 5:  monthString = "May";
+                     break;
+            case 6:  monthString = "June";
+                     break;
+            case 7:  monthString = "July";
+                     break;
+            case 8:  monthString = "August";
+                     break;
+            case 9:  monthString = "September";
+                     break;
+            case 10: monthString = "October";
+                     break;
+            case 11: monthString = "November";
+                     break;
+            case 12: monthString = "December";
+                     break;
+            default: monthString = "Invalid month";
+                     break;
+        } // break makes it so it exits out of that singular case switch
+        System.out.println(monthString);
+    }
+}
   /* (Precedence order)
    *When two operators share an operand
    *the operator with the higher precedence goes first. 
@@ -198,7 +233,7 @@ return tier;
 */
   
 //break lets the user break out of the case that the code was in thus not going to another case.
-// i have more code in the in class computer i thought i commit and pushed it to gethub but i was wrong.
+
     
 }
 

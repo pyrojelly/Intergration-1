@@ -21,7 +21,9 @@ public class Main {
     /*
      * I am thinking of doing a game for my project maybe a jeopardy game involving java language.
      */
-
+     int a= 1;
+    do {
+      
     System.out.println("Hello Welcome to my game!");
     System.out.println(".........................");
     System.out.println("Do you want to play?"); // ask for input
@@ -91,6 +93,18 @@ System.out.println(board2[1][1]); //should show 5
     list.add("sheld");
     list.add("bow");
     System.out.println(list);
+        try {
+       int sum1 = 1/0;
+       System.out.println(sum1);
+    }
+    catch(ArithmeticException a1) {
+      System.out.println("cant divid by zero");
+    }
+   a=2;
+    }
+    while(a==1);
+   }
+  
   }
 
   /**

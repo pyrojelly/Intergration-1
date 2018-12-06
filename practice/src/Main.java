@@ -17,96 +17,84 @@ public class Main {
    * @param args just the main argument.
    */
   public static void main(String[] args) {
-
-    /*
-     * I am thinking of doing a game for my project maybe a jeopardy game involving java language.
-     */
-     int a= 1;
+    int a = 1;
     do {
-      
-    System.out.println("Hello Welcome to my game!");
-    System.out.println(".........................");
-    System.out.println("Do you want to play?"); // ask for input
 
-    printDataInfo(); // a Call (if something in here then argument)
-    Pitbull pitbull= new Pitbull(); // ex of polymorphism
-    Dog BkPit= pitbull;
-    BkPit.bark();
-         
-    int sumArray=0;  //ex. arrays
-    int[] values; 
+      System.out.println("Hello Welcome to my code!");
+      System.out.println(".........................");
+      System.out.println("Do you want to learn?"); // ask for input
 
-    values = new int[3]; 
-    values[0]= 20;
-    values[1]=30;
-    values[2]=10;
-    
-    System.out.println(values[0]); // prints out the array index
-    System.out.println(values[1]);
-    System.out.println(values[2]);   
-    System.out.println("-------------");
-    
-    for (int I=0; I<values.length; I++ ) {  //same as above but in 2 line not 3
-      System.out.println(values[I]);
-    } 
-    
-    System.out.println("-------------");
-    
-    for (int I=0; I<values.length; I++ ) {  // adds all index's  
-    sumArray+= values[I];
-    }
-    System.out.println(sumArray);
-    System.out.println("-------------");
-    
-    int smallVal= values[0];
-    for (int I=0; I<values.length; I++ ) {  // finds smallest value 
-      if (values[I]<smallVal);
-        smallVal= values[I];
+      printDataInfo(); // a Call (if something in here then argument)
+      Pitbull pitbull = new Pitbull(); // ex of polymorphism
+      Dog BkPit = pitbull;
+      BkPit.bark();
+
+      int sumArray = 0; // ex. arrays
+      int[] values;
+
+      values = new int[3];
+      values[0] = 20;
+      values[1] = 30;
+      values[2] = 10;
+
+      System.out.println(values[0]); // prints out the array index
+      System.out.println(values[1]);
+      System.out.println(values[2]);
+      System.out.println("-------------");
+
+      for (int I = 0; I < values.length; I++) { // same as above but in 2 line not 3
+        System.out.println(values[I]);
       }
-    System.out.println(smallVal);
-    System.out.println("-------------");
-    int total= 0;
-    for(int x: values) { // ex enhanced for loop , same as above both equal 60
-      total+= x;
-    }
-    System.out.println(total);
-    System.out.println("-------------");
-    
-  
- int[][] board = new int[3][3];
- for (int i = 0; i < board.length; i++) {
-   for (int j = 0; j < board[i].length; j++) {
-     board[i][j] = i + j;
-     } 
-   
- }
- System.out.println(board[1][1]);
- int[][] board2 = {
-     {1,2,3},
-     {4,5,6},
-     {7,8,9}
- }; 
-System.out.println(board2[1][1]); //should show 5
-    ArrayList<String> list = new ArrayList<String>();
-    list.add("Item1");
-    list.add("sword");
-    list.add("sheld");
-    list.add("bow");
-    System.out.println(list);
-        try {
-       int sum1 = 1/0;
-       System.out.println(sum1);
-    }
-    catch(ArithmeticException a1) {
-      System.out.println("cant divid by zero");
-    }
-   a=2;
-    }
-    while(a==1);
-   }
-  
-  }
 
+      System.out.println("-------------");
+
+      for (int I = 0; I < values.length; I++) { // adds all index's
+        sumArray += values[I];
+      }
+      System.out.println(sumArray);
+      System.out.println("-------------");
+
+      int smallVal = values[0];
+      for (int I = 0; I < values.length; I++) { // finds smallest value
+        if (values[I] < smallVal)
+          ;
+        smallVal = values[I];
+      }
+      System.out.println(smallVal);
+      System.out.println("-------------");
+      int total = 0;
+      for (int x : values) { // ex enhanced for loop , same as above both equal 60
+        total += x;
+      }
+      System.out.println(total);
+      System.out.println("-------------");
+
+
+      int[][] board = new int[3][3];
+      for (int i = 0; i < board.length; i++) {
+        for (int j = 0; j < board[i].length; j++) {
+          board[i][j] = i + j;
+        }
+
+      }
+      System.out.println(board[1][1]);
+      int[][] board2 = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+      System.out.println(board2[1][1]); // should show 5
+      ArrayList<String> list = new ArrayList<String>();
+      list.add("Item1");
+      list.add("sword");
+      list.add("sheld");
+      list.add("bow");
+      System.out.println(list);
+      try {
+        int sum1 = 1 / 0;
+        System.out.println(sum1);
+      } catch (ArithmeticException a1) {
+        System.out.println("cant divid by zero");
+      }
+      a = 2;
+    } while (a == 1);
+  }
   /**
    * a method that return nothing but displays primitive values.
    */
@@ -249,9 +237,10 @@ System.out.println(board2[1][1]); //should show 5
    *
    */
   public static class SwitchDemo {
-    /** 
-     * another  main method to use switch statement.
-     * @param args  just the main argument.
+    /**
+     * another main method to use switch statement.
+     * 
+     * @param args just the main argument.
      */
     public static void main(String[] args) {
 
